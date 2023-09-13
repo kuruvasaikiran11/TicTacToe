@@ -57,7 +57,7 @@ function checkWinner(){
     || (choices[1].innerText === "O" && choices[4].innerText === "O" && choices[7].innerText === "O")
     || (choices[2].innerText === "O" && choices[5].innerText === "O" && choices[8].innerText === "O")
     || (choices[0].innerText === "O" && choices[4].innerText === "O" && choices[8].innerText === "O")
-    || (choices[2].innerText === "O" && choices[4].innerText === "O" && choices[6].innerText === "0")){
+    || (choices[2].innerText === "O" && choices[4].innerText === "O" && choices[6].innerText === "O")){
         // alert("Player 1 is the Winner");
         // location.reload();
         winnerText.textContent = "Player 1 is the Winner!";

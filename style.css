@@ -135,3 +135,25 @@ h1{
     background-color: white;
 }
 
+@media (max-width : 450px){
+    #game-container{
+        flex-direction: column;
+    }
+    #game-container .player i {
+        font-size: 20px;
+    }
+    #game-container .player p {
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    #game{
+        width: 80%;
+    }
+    .game-box{
+        width: calc(30% - 10px);
+        font-size: 20px;
+        height: 50px;
+    }
+
+}
