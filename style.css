@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    background-color: #E6F7FF;
+}
+
+h1{
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #333333;
+    font-weight: 600;
+}
+
+#game-container{
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: aqua; */
+    margin: 50px auto;
+    /* gap: 50px; */
+}
+
+.game-box{
+    width: calc(33% - 4px - 40px);
+    background-color: #75BAC5;
+    border-radius: 10px;
+    /* border: 2px solid blue; */
+    /* width: 50px; */
+    height: 100px;
+    margin: 5px 5px;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-box:hover{
+    background-color: #494D58;
+    color: #8A8E9B;
+}
+
+.circle{
+    background-color: #EEAC51;
+}
+
+.cross{
+    background-color: #DF665B;
+}
