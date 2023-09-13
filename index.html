@@ -6,19 +6,34 @@
     <title>TicTacToe</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/9a7165a460.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
     <div id="game-container">
-        <div class="game-box" id="box1">X</div>
-        <div class="game-box" id="box2"></div>
-        <div class="game-box" id="box3"></div>
-        <div class="game-box" id="box4"></div>
-        <div class="game-box" id="box5"></div>
-        <div class="game-box" id="box6"></div>
-        <div class="game-box" id="box7"></div>
-        <div class="game-box" id="box8"></div>
-        <div class="game-box" id="box9"></div>
+        <div class="player">
+            <i class="fa-solid fa-user-large" id="player1"></i>
+            <p>Player 1</p>
+        </div>
+        <div id="game">
+            <div class="game-box unoccupied" id="box1"></div>
+            <div class="game-box unoccupied" id="box2"></div>
+            <div class="game-box unoccupied" id="box3"></div>
+            <div class="game-box unoccupied" id="box4"></div>
+            <div class="game-box unoccupied" id="box5"></div>
+            <div class="game-box unoccupied" id="box6"></div>
+            <div class="game-box unoccupied" id="box7"></div>
+            <div class="game-box unoccupied" id="box8"></div>
+            <div class="game-box unoccupied" id="box9"></div>
+        </div>
+        <div class="player">
+            <i class="fa-solid fa-user-large" id="player2"></i>
+            <p>Player 2</p>
+        </div>
     </div>
 </body>
 </html>

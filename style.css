@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html, body{
     margin: 0;
     padding: 0;
     overflow: hidden;
     text-align: center;
-    font-family: 'Bangers', cursive;
+    font-family: 'Roboto', sans-serif;
     background-color: #E6F7FF;
 }
 
 h1{
+    font-family: 'Bangers', cursive;
     font-size: 48px;
     letter-spacing: 2px;
     color: #333333;
@@ -17,7 +19,24 @@ h1{
 }
 
 #game-container{
-    width: 30%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#game-container .player i{
+    font-size: 100px;
+}
+
+#game-container .player p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#game{
+    width: 40%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -40,11 +59,16 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
 }
 
-.game-box:hover{
+.unoccupied:hover{
     background-color: #494D58;
     color: #8A8E9B;
+}
+
+.occupied{
+    cursor: not-allowed;
 }
 
 .circle{
