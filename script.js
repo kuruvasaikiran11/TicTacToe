@@ -35,6 +35,7 @@ function checkWinner(){
     let choices = document.getElementsByClassName("game-box");
     const winnerDiv = document.getElementById("winner-div");
     const winnerText = document.getElementById("winner-text");
+    const winnerContent = document.getElementById("winner-content");
     // console.log(choices[0].innerHTML);
     
     if((choices[0].innerText === "X" && choices[1].innerText === "X" && choices[2].innerText === "X")
@@ -48,7 +49,8 @@ function checkWinner(){
         // alert("Player 2 is the winner");
         // location.reload();
         winnerText.textContent = "Player 2 is the Winner!";
-        // winnerDiv.style.backgroundColor = "#DF665B"; 
+        // winnerText.style.backgroundColor = "#DF665B"; 
+        winnerContent.style.backgroundColor = "#DF665B";
         winnerDiv.style.display = "block"; 
     }else if((choices[0].innerText === "O" && choices[1].innerText === "O" && choices[2].innerText === "O")
     || (choices[3].innerText === "O" && choices[4].innerText === "O" && choices[5].innerText === "O")
@@ -61,13 +63,14 @@ function checkWinner(){
         // alert("Player 1 is the Winner");
         // location.reload();
         winnerText.textContent = "Player 1 is the Winner!";
+        winnerContent.style.backgroundColor = "#EEAC51";
         // winnerDiv.style.backgroundColor = "#EEAC51"; 
         winnerDiv.style.display = "block";
     }else if(count === 9){
         // alert("Game is Tied...")
         // location.reload();
         winnerText.textContent = "Game is Tied...";
-        // winnerDiv.style.backgroundColor = "#75BAC5"; // Optional styling
+        // winnerDiv.style.backgroundColor = "#75BAC5"; 
         winnerDiv.style.display = "block";
     }
 }

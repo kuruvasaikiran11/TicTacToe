@@ -7,7 +7,7 @@ html, body{
     overflow: hidden;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: #bab6b9;
+    background-color: #857681;
 }
 
 h1{
@@ -35,9 +35,19 @@ h1{
     padding: 20px;
     border-radius: 20px;
 }
+
+#game-container .player:first-of-type{
+    background-color: #EEAC51;
+}
+
+#game-container .player:last-of-type{
+    background-color: #DF665B;
+}           
+
 #game-container .player i{
     font-size: 100px;
 }
+
 
 #game-container .player p{
     font-size: 20px;
